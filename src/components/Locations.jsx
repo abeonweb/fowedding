@@ -12,22 +12,9 @@ const Locations = () => {
     };
   },[]);
 
-  // function scrolled() {
-  //   const navbar = document.querySelector(".navbar");
-  //   const sharedLayout = document.querySelector("#shared-layout");
-  //   if (navbar !== null && sharedLayout !== null){
-  //       if (window.scrollY > navbar.clientHeight) {
-  //           console.log("adding to navbar class");
-  //           sharedLayout.classList.add(`sticky`);
-  //       } else {
-  //           sharedLayout.classList.remove(`sticky`);
-  //           console.log("nothing");
-  //       }
-  //   } 
-  // }
   return (
     <section id="locations" className={styles.section}>
-        <h1>Information of Interest</h1>
+        <h1 className={styles.sectionTitle}>Information of Interest</h1>
         <nav>
           <ul>
             <li><Link to="#engagement" onClick={()=> scrollIntoTheView("engagement")}>Engagement</Link></li>
