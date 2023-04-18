@@ -24,7 +24,7 @@ const Gallery = () => {
       <h2 className={styles.sectionTitle}>Some of our photos</h2>
       <div className={styles.container}>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4 }}>
-          <Masonry columnsCount={4} gutter="10px">{photosList}</Masonry>
+          <Masonry columnsCount={4} gutter="20px">{photosList}</Masonry>
         </ResponsiveMasonry>
       </div>
     </section>
