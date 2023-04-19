@@ -1,24 +1,28 @@
-.main {
-    min-height: 90vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--inter-font);
-  }
+.section {
+    max-width: 100vw;
+    margin-top: 0;
+    padding: 3em 0.5em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+
+}
+
+.sectionTitle {
+    font-family: "Great Vibes";
+    font-size: 2.5em;
+    padding: 1em;
+    text-shadow: 2px 4px 3px #5d5d5d;
+}
 
 .title {
     margin: 2em 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image {
+.photo {
     width: 100%;
+    height: auto;
     margin: 0 0 1em;
 }

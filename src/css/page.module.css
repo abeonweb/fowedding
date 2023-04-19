@@ -1,3 +1,15 @@
 .home {
-    padding-top: 7.5em;
+    padding-top: 4.15em;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(70, 69, 69, 0.65);
 }

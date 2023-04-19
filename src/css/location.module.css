@@ -1,7 +1,42 @@
 .section{
-    padding-top: 10em;
+    padding: 2em 0.5em 5em;
+    background-color: rgba(255,255,255, 0.3);
 }
 
-.location {
-    min-height: 60vh;
+.container{
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em 2em 5em;
+    background-color: rgb(210, 210, 210);
+    border-radius: 6px;
+
+}
+
+.sectionTitle {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1.1;
+    margin: 1em;
+}
+
+.typography {
+    display: flex;
+    align-items: center;
+}
+
+
+.map{
+    max-width: 60rem;
+    margin: 1em auto;
+    border: 2px solid var(--color-highlight2);
+    height: auto;
+}
+
+.mapImage{
+    width: 100%;
+}
+
+.locationLink {
+    color: var(--color-highlight2);
+    text-decoration: underline;
 }
