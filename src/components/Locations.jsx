@@ -1,7 +1,12 @@
-import React, {useEffect} from 'react'
-import styles from "../css/location.module.css"
-import {Link} from "react-router-dom"
-import {scrollIntoTheView} from "../utils/scroll"
+import React, { useEffect, useState } from "react";
+import styles from "../css/location.module.css";
+import { scrollIntoTheView } from "../utils/scroll";
+import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Typography from "@mui/material/Typography";
+import Map from "./Map";
+import { locations } from "../data";
 
 const Locations = () => {
   useEffect(() => {
@@ -10,41 +15,68 @@ const Locations = () => {
     return function () {
       window.removeEventListener("scroll", scrollIntoTheView);
     };
-  },[]);
+  }, []);
+
+  const [expanded, setExpanded] = useState(false);
+
+  const handleChange = (locationId) => (event, isExpanded) => {
+    setExpanded(isExpanded ? locationId : false);
+  };
 
   return (
     <section id="locations" className={styles.section}>
+      <div className={styles.container}>
         <h1 className={styles.sectionTitle}>Information of Interest</h1>
-        <nav>
-          <ul>
-            <li><Link to="#engagement" onClick={()=> scrollIntoTheView("engagement")}>Engagement</Link></li>
-            <li><Link to="#wedding" onClick={()=> scrollIntoTheView("wedding")}>Wedding</Link></li>
-            <li><Link to="#reception" onClick={()=> scrollIntoTheView("reception")}>Reception</Link></li>
-          </ul>
-        </nav>
-        <div id="engagement" className={styles.location}>
-            <h2>Engagement - Time</h2>
-            <h3>Event Hall - Ikeja</h3>
-            <h4>Time: 10am</h4>
-            {/*Add a map*/}
-            {/*Additional info*/}
-        </div>
-        <div id="wedding"className={styles.location}>
-            <h2>Wedding at Church - Time</h2>
-            <h3>First Baptist Church - Ikeja</h3>
-            <h4>Time: 10am</h4>
-            {/*Add a map*/}
-            {/*Additional info*/}
-        </div>
-        <div id="reception"className={styles.location}>
-            <h2>Reception - Time</h2>
-            <h3>Event Hall - Ikeja</h3>
-            <h4>Time: 10am</h4>
-            {/*Add a map*/}
-            {/*Additional info*/}
-        </div>
-    </section>
-  )
-}
 
-export default Locations
+        {locations.map(
+          ({ id, title, date, time, address, link, image, info }) => (
+            <Accordion
+              key={id}
+              expanded={expanded === id}
+              onChange={handleChange(id)}
+            >
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls={`${id}location-content`}
+                id={`${id}location-header`}
+              >
+                <Typography variant="h5" sx={{ width: "33%", flexShrink: 0 }} className={styles.typography}>
+                  <LocationOnOutlinedIcon fontSize="large" />
+                  {title}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                  {`Date: ${date}`}
+                </Typography>
+                <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                  {` Time: ${time}`}
+                </Typography>
+                <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                  {`Address: ${address}`}
+                </Typography>
+                <a href={link} target="_blank" rel="noreferrer">
+                  <Map image={image} />
+                </a>
+                <Typography sx={{ color: "text.secondary" }}>
+                  Additional info:{" "}
+                  <a
+                    className={styles.locationLink}
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    {info}
+                  </a>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          )
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default Locations;
