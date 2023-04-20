@@ -1,35 +1,51 @@
-
 import styles from "../css/gallery.module.css";
 import { photos } from "../data";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { Gallery, Item } from "react-photoswipe-gallery";
+import "photoswipe/dist/photoswipe.css";
 
-const photosList = photos.map(({ src, width, height }) => {
-  let imageSource = require(`../images/${src}.jpg`);
+const photosList = photos.map(({ key, src, width, height }) => {
+  const imageSource = require(`../images/${src}.jpg`);
+  const thumbImageSource = require(`../images/${src}_thumb.jpeg`);
   return (
-    <img
-      key={src}
-      src={imageSource}
-      alt=""
+    <Item
+      key={key}
+      original={imageSource}
+      thumbnail={thumbImageSource}
       width={width}
       height={height}
-      styles={{width: "100%", display: "block"}}
-      className={styles.photo}
-    />
+    >
+      {({ ref, open }) => (
+        <img
+          ref={ref}
+          onClick={open}
+          src={imageSource}
+          alt=""
+          className={styles.photo}
+        />
+      )}
+    </Item>
   );
 });
 
-const Gallery = () => {
+const PhotoGallery = () => {
   return (
     <section id="gallery" className={`${styles.section}`}>
       <h2 className={styles.sectionTitle}>Some of our photos</h2>
-      <div className={styles.container}>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4 }}>
-          <Masonry columnsCount={4} gutter="20px">{photosList}</Masonry>
-        </ResponsiveMasonry>
-      </div>
+        <Gallery>
+          <div
+           className={styles.container}
+           style={{
+              display: "grid",
+              gridTemplateColumns: "240px 171px 171px",
+              gridTemplateRows: "254px 254px",
+              gridGap: 24,
+            }}
+          >
+            {photosList}
+          </div>
+        </Gallery>
     </section>
   );
 };
 
-export default Gallery;
-
+export default PhotoGallery;
