@@ -46,19 +46,17 @@ const Locations = () => {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                <Typography variant="h6" >
                   {`Date: ${date}`}
                 </Typography>
-                <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                <Typography variant="h6" >
                   {` Time: ${time}`}
                 </Typography>
-                <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                <Typography variant="h6" >
                   {`Address: ${address}`}
                 </Typography>
-                <a href={link} target="_blank" rel="noreferrer">
-                  <Map image={image} />
-                </a>
-                <Typography sx={{ color: "text.secondary" }}>
+                  <Map image={image} link={link}/>
+                <Typography >
                   Additional info:{" "}
                   <a
                     className={styles.locationLink}
