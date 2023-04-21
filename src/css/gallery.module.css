@@ -4,13 +4,13 @@
     padding: 3em 0.5em;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+
 }
 
 .container {
     margin: 0 auto;
     max-width: 900px;
-
 }
 
 .sectionTitle {
@@ -26,8 +26,6 @@
 
 .photo {
     width: 100%;
-    max-width: 200px;
     height: auto;
-    margin: 0 0 1em;
+    margin: 0 0 0.5em;
 }
-
