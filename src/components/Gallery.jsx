@@ -1,5 +1,4 @@
 import styles from "../css/gallery.module.css";
-import { useEffect, useState } from "react";
 import { photos } from "../data";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
