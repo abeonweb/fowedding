@@ -26,9 +26,8 @@ body {
 
 body {
   min-height: 100%;
-  font-family: var(--inter-font);
-  background-color: aliceblue;
-  background: url(https://res.cloudinary.com/abeonweb/image/upload/c_scale,w_1200/v1681302015/background_yvr46u.jpg);
+  background-color: var(--color-secondary);
+  background: url(https://res.cloudinary.com/abeonweb/image/upload/v1681971420/blackslab2_nqixz0.jpg);
   /* linear-gradient(159deg, rgba(255,255,255,0.65) 2%, rgba(202,202,203,0.65) 12%, rgba(219,218,221,0.65) 20%, rgba(255,255,255,0.65) 29%, rgba(244,242,242,0.65) 78%, rgba(202,202,203,0.65) 89%, rgba(255,255,255,0.65) 100%); */
   background-size: cover;
   background-repeat: no-repeat;
