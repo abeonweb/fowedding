@@ -6,12 +6,12 @@ import useMediaQuery from "../utils/useMediaQuery";
 
 const photosList = photos.map(({ key, src, width, height }) => {
   const imageSource = require(`../images/${src}.jpg`);
-  const thumbImageSource = require(`../images/${src}_thumb.jpeg`);
+  // const thumbImageSource = require(`../images/thumbs/${src}_thumb.jpeg`);
   return (
     <Item
       key={key}
       original={imageSource}
-      thumbnail={thumbImageSource}
+      // thumbnail={thumbImageSource}
       width={width}
       height={height}
     >
