@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React from "react";
 import styles from "../css/navigation.module.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import { scrollIntoTheView } from "../utils/scroll.js";
 import useOpen from "../utils/useOpen";
@@ -17,7 +17,13 @@ const Navigation = () => {
       <div className={styles.navContent}>
         <div className={styles.navLogo}>
           <div>
-            <Link href="/" onClick={() => {scrollIntoTheView("home")}} className={styles.navTitleLink}>
+            <Link
+              to="/home"
+              onClick={() => {
+                scrollIntoTheView("home");
+              }}
+              className={styles.navTitleLink}
+            >
               <h1 className={styles.pageTitle}>Folake &amp; Oluwole</h1>
             </Link>
           </div>
@@ -29,45 +35,61 @@ const Navigation = () => {
         <nav className={styles.nav}>
           <Fade>
             <ul className={styles.navList}>
-              <li
-                className={styles.navListItem}
-                onClick={() => {scrollIntoTheView("home"); handleClick()}}
-              >
-                <Link href="/" className={styles.navLink}>
-                  Home
+              <li className={styles.navListItem}>
+                <Link
+                  to="/home"
+                  className={styles.navLink}
+                  onClick={() => {
+                    scrollIntoTheView("home");
+                    handleClick();
+                  }}
+                >
+                  <div>Home</div>
                 </Link>
               </li>
-              <li
-                className={styles.navListItem}
-                onClick={() => {scrollIntoTheView("gallery"); handleClick()}}
-              >
+              <li className={styles.navListItem}>
                 <Link
-                  href="#gallery"
+                  to="/gallery"
                   className={styles.navLink}
+                  onClick={() => {
+                    scrollIntoTheView("gallery");
+                    handleClick();
+                  }}
                 >
-                  Gallery
+                  <div>Gallery</div>
                 </Link>
               </li>
-              <li
-                className={styles.navListItem}
-                onClick={() => {scrollIntoTheView("locations"); handleClick()}}
-              >
+              <li className={styles.navListItem}>
                 <Link
-                  href="#locations"
+                  to="/info"
                   className={styles.navLink}
+                  onClick={() => {
+                    scrollIntoTheView("info");
+                    handleClick();
+                  }}
                 >
-                  Locations
+                  <div>Information</div>
                 </Link>
               </li>
-              <li
-                className={styles.navListItem}
-                onClick={() => {scrollIntoTheView("story"); handleClick()}}
-              >
+              <li className={styles.navListItem}>
                 <Link
-                  href="#story"
+                  to="/story"
                   className={styles.navLink}
+                  onClick={() => {
+                    scrollIntoTheView("story");
+                    handleClick();
+                  }}
                 >
-                  Our Story
+                  <div>Our Story</div>
+                </Link>
+              </li>
+              <li className={styles.navListItem}>
+                <Link
+                  to="/programs"
+                  className={styles.navLink}
+                  onClick={() => handleClick()}
+                >
+                  <div>Programs</div>
                 </Link>
               </li>
             </ul>
