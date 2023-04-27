@@ -6,8 +6,8 @@ import styles from "../css/splash.module.css"
 const Splash = () => {
   return (
     <WaterWave 
-      imageUrl={"https://res.cloudinary.com/abeonweb/image/upload/v1681971420/blackslab2_nqixz0.jpg"} 
-      perturbance={0.03}
+      imageUrl={"https://res.cloudinary.com/abeonweb/image/upload/v1682182063/blackslab_n2blsh.jpg"} 
+      perturbance={0.008}
       resolution={256}
       style={{ width: '100%', height: '100%', backgroundSize: 'cover', backgroundPosition: "25%" }}
     >
