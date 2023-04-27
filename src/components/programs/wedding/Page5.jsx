@@ -3,7 +3,9 @@ import styles from "../../../css/program.module.css";
 const Page5 = () => {
   return (
     <div className={styles.page}>
-      <h2 className={styles.subHeading}>8. JOINING AND BLESSING</h2>
+      <ol className={styles.serviceList} start={"8"}>
+        <li className={styles.subHeading}>JOINING AND BLESSING</li>
+      </ol>
       <p className={styles.page5joining}>
         <span className={styles.highlightSpan}>Minister:</span> Now that your family members, relatives, friends and Christian
         brethren have with one voice pledged to support you with their prayers.
@@ -31,7 +33,7 @@ const Page5 = () => {
         have brought for your bride?
       </p>
       <p className={styles.page5joining}>
-        <span className={styles.highlightSpan}>Minister:</span> The Bible is God’s revelation to mankind. It is God’s guide
+        <span className={styles.highlightSpan}>Minister:</span> The Bible is God&apos;s revelation to mankind. It is God&apos;s guide
         and pathfinder to His son, Jesus Christ to eternal life. May God help
         you build your home on the Lord Jesus Christ who is revealed in this
         book as the way, the truth and the life. Amen.

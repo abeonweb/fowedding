@@ -1,11 +1,10 @@
-import React from "react";
 import styles from "../../../css/program.module.css";
 
 const Page2 = () => {
   return (
     <div className={styles.page}>
       <h2 className={styles.subHeading}>OFFICIATING MINISTERS</h2>
-      <ul className={styles.pageList1}>
+      <ul className={styles.page2List1}>
         <li>
           <p className={styles.page2ListPara}>
             Revd. Dr. Kolawole Oluwaseun Ogokunle
@@ -41,12 +40,16 @@ const Page2 = () => {
 
       <h2 className={styles.subHeading}>ORDER OF WORSHIP</h2>
 
-      <ol className={styles.pageList2}>
-        <li className={styles.pageList2Split}>
-          <p className={`${styles.page2ListPara} ${styles.para1}`}>Bridal Processional Hymn:</p>
-          <p className={`${styles.page2ListPara2} ${styles.para1}`}>
-            BH134 “All hail the power of Jesus name”
-          </p>
+      <ol className={styles.page2List2}>
+        <li>
+          <div className={styles.page2List2Split}>
+            <p className={`${styles.page2ListPara} ${styles.paragraph}`}>
+              Bridal Processional Hymn:
+            </p>
+            <p className={`${styles.page2ListPara2} ${styles.paragraph}`}>
+              BH134 “All hail the power of Jesus name”
+            </p>
+          </div>
         </li>
         <li>
           <p className={styles.page2ListPara}>Call To Worship</p>
@@ -54,16 +57,26 @@ const Page2 = () => {
         <li>
           <p className={styles.page2ListPara}>Opening Prayer</p>
         </li>
-        <li className={styles.pageList2Split}>
-          <p className={`${styles.page2ListPara} ${styles.para1}`}>Hymn: </p>
-          <p className={`${styles.page2ListPara2} ${styles.para1}`}>YBH188 “Amazing grace”</p>
+        <li>
+          <div className={styles.page2List2Split}>
+            <p className={`${styles.page2ListPara} ${styles.paragraph}`}>Hymn: </p>
+            <p className={`${styles.page2ListPara2} ${styles.paragraph}`}>
+              YBH188 “Amazing grace”
+            </p>
+          </div>
         </li>
         <li>
           <p className={styles.page2ListPara}>Exhortation</p>
         </li>
-        <li className={styles.pageList2Split}>
-          <p className={`${styles.page2ListPara} ${styles.para1}`}>Congregational hymn: </p>
-          <p className={`${styles.page2ListPara2} ${styles.para1}`}>And can it be that I should gain</p>
+        <li>
+          <div className={styles.page2List2Split}>
+            <p className={`${styles.page2ListPara} ${styles.paragraph}`}>
+              Congregational hymn:{" "}
+            </p>
+            <p className={`${styles.page2ListPara2} ${styles.paragraph}`}>
+              And can it be that I should gain
+            </p>
+          </div>
         </li>
         <li>
           <p className={styles.page2ListPara}>Charge and Declaration</p>
@@ -74,21 +87,22 @@ const Page2 = () => {
         <li>
           <p className={styles.page2ListPara}>Special Prayer for the Couple</p>
         </li>
-        <li className={styles.pageList2Split}>
-          <p className={`${styles.page2ListPara} ${styles.para1}`}>
-            Congregational Hymn: </p>
-          <p className={`${styles.page2ListPara2} ${styles.para1}`}> “God give us Christian home”
-          </p>
+        <li>
+          <div className={styles.page2List2Split}>
+            <p className={`${styles.page2ListPara} ${styles.paragraph}`}>
+              Congregational Hymn:{" "}
+            </p>
+            <p className={`${styles.page2ListPara2} ${styles.paragraph}`}>
+              {" "}
+              “God give us Christian home”
+            </p>
+          </div>
         </li>
         <li>
-          <p className={styles.page2ListPara}>
-            a&#41; Signing of marriage register
-          </p>
-        </li>
-        <li>
-          <p className={styles.page2ListPara}>
-            b&#41; Presentation of Marriage Certificate
-          </p>
+          <ul className={styles.page2List2InnerList}>
+            <li className={styles.page2List2InnerListItem}>a&#41; Signing of marriage register</li>
+            <li className={styles.page2List2InnerListItem}>b&#41; Presentation of Marriage Certificate</li>
+          </ul>
         </li>
         <li>
           <p className={styles.page2ListPara}>Scripture Reading</p>
@@ -110,11 +124,15 @@ const Page2 = () => {
         <li>
           <p className={styles.page2ListPara}>Closing Prayer</p>
         </li>
-        <li className={styles.pageList2Split}>
-          <p className={`${styles.page2ListPara} ${styles.para1}`}>
-            Recessional Hymn: </p>
-          <p className={`${styles.page2ListPara2} ${styles.para1}`}>BH266 Standing on the promises”
-          </p>
+        <li>
+          <div className={styles.page2List2Split}>
+            <p className={`${styles.page2ListPara} ${styles.paragraph}`}>
+              Recessional Hymn:{" "}
+            </p>
+            <p className={`${styles.page2ListPara2} ${styles.paragraph}`}>
+              BH266 Standing on the promises”
+            </p>
+          </div>
         </li>
       </ol>
     </div>

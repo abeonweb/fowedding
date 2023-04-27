@@ -16,7 +16,7 @@ const Page1 = () => {
       <p className={styles.page1Para}>TIME: 12:00</p>
       <p className={`${styles.page1Para} ${styles.smaller}`}>AT</p>
       <p className={styles.page1Para}>FIRST BAPTIST CHURCH</p>
-      <p className={styles.page1Para}>(PREVAILERS’ SANCTUARY)</p>
+      <p className={styles.page1Para}>(PREVAILERS&apos; SANCTUARY)</p>
       <p className={styles.page1Para}>(MEMBER NIGERIAN BAPTIST CONVENTION)</p>
 
       <p className={`${styles.page1Para} ${styles.smaller}`}>
@@ -44,8 +44,8 @@ const Page1 = () => {
         MISSION STATEMENT
       </h3>
       <p className={`${styles.page1Para} ${styles.smaller}`}>
-        To attract seekers into God’s family; building them up under a continual
-        process of life enhancement, sustaining them in an atmosphere of God’s
+        To attract seekers into God&apos;s family; building them up under a continual
+        process of life enhancement, sustaining them in an atmosphere of God&apos;s
         love and power, to facilitate their transformation unto the full stature
         of their potentials and their calling in Christ Jesus.
       </p>
