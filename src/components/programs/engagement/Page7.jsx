@@ -4,7 +4,7 @@ import styles from "../../../css/program.module.css";
 const Page1 = () => {
   return (
     <div className={styles.page}>
-      <p className={styles.subHeading}>OUR SINCERE GRATITUDE</p>
+      <p className={styles.subHeading2}>OUR SINCERE GRATITUDE</p>
       <p className={`${styles.page1Para} ${styles.darker}`}>
         To the Almighty ancient of days who has never left our side. The one who
         no man can question and who has made this beautiful moment possible.
