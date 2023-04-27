@@ -73,5 +73,20 @@
         image: "event3"
       },
   ]
+
+  const programs = [
+    {
+      id: "Engagement",
+      pages: 7,
+    },
+    {
+      id: "Wedding",
+      pages: 6,
+    },
+    {
+      id: "Reception",
+      pages: 2,
+    },
+  ]
   
-  export {photos, locations}
+  export {photos, locations, programs}
