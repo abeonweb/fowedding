@@ -1,27 +1,18 @@
-.home {
-  min-height: 90vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(https://res.cloudinary.com/abeonweb/image/upload/v1681971420/blackslab2_nqixz0.jpg);
-  /* background-position: center;
-  background-size: 60%;
-  background-repeat: no-repeat; */
-}
-
 .splashImageContainer {
   min-height: 100vh;
   width: 100vw;
   padding: 0 2em 2em;
   display: flex;
   background: transparent;
-
+  /* background: url(../images/blackslab.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
 
 }
 

@@ -7,7 +7,7 @@
     max-width: 600px;
     margin: 2em auto;
     padding: 2em 0.5em 5em;
-    background-color: rgb(210, 210, 210);
+    /* background-color: rgb(210, 210, 210); */
     border-radius: 6px;
 
 }
@@ -39,4 +39,14 @@
 .locationLink {
     color: var(--color-highlight2);
     text-decoration: underline;
+}
+
+@media (min-width: 500px){
+    .section {
+        padding: 3em;
+    }
+
+    .container {
+        padding: 2em;
+    }
 }
