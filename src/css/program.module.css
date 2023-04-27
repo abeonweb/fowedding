@@ -1,0 +1,179 @@
+.program {
+    padding: 6rem 0.1rem;
+}
+
+.page {
+    width: 95vw;
+    max-width: 900px;
+    background-color: var(--color-secondary);
+    margin: 0.8rem auto;
+    padding: 6.5rem 0.7rem;
+}
+
+
+.subHeading {
+    font-weight: 700;
+    text-align: left;
+    margin: 1.5em 0 0.4em 1em;
+}
+
+.serviceList {
+    padding: 0 0.5em;
+    margin: 2em 0.25em 0.5em;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+.subHeading2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5em 0 0.4em;
+    
+}
+
+.subHeadingWithList {
+    text-align: left;
+    margin: 0 0 0 1em;
+}
+
+.subHeadingListItem {
+    margin: 0 0 0 1.5em;
+}
+
+.subHeadingList{
+    list-style-type: lower-alpha;
+}
+
+@media (min-width: 500px) {
+    .page {
+        padding: 2.5em 1.5em;
+    }
+}
+
+/****************Page 1******************/
+.page1Para {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 108%;
+}
+
+.page1SubHeading {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.smaller {
+    font-size: 80%;
+}
+
+
+.darker {
+    font-weight: 700;
+}
+
+
+/****************Page 2******************/
+.page2ListPara {
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+.smallerText {
+    font-size: 80%;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.page2List1{
+    margin: 2em auto;
+    width: 95%;
+    list-style: none;
+    text-align: center;
+}
+
+.page2List1 li {
+    margin: 0;
+}
+
+
+.page2List2 {
+    width: 100%;
+    text-align: left;
+    padding: 0 0.5em;
+    margin: 2em 1em;
+}
+
+.page2List2 .page2ListPara {
+    margin: 0 0.5em 0 0;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.page2List2 li {
+    margin: 0 0.2em;
+    padding: 1em 0.3em;
+    border-bottom: 1px solid rgb(212, 209, 209);
+}
+
+.page2List2InnerList {
+    list-style: none;
+}
+
+.page2List2InnerList .page2List2InnerListItem{
+    padding: 0.25em 0.3em;
+    border: none;
+
+}
+
+.page2List2Split {
+    display: flex;
+}
+
+.paragraph{
+    margin: 0;
+    width: 50%;
+}
+
+/****************Page 3******************/
+.page3Para {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+}
+
+.pageList {
+    padding: 0 0.5em;
+    margin: 2em 0 2em 0.25em;
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+/****************Page 4 ******************/
+.page4charge{
+    margin: 1em;
+}
+
+.highlightSpan {
+    font-weight: 700;
+}
+
+.italicHighlightSpan {
+    font-weight: 700;
+    font-style: italic;
+}
+
+@media (min-width: 500px){
+    .pageList {
+        margin: 2em auto;
+        max-width: 400px;
+    }
+    
+}
+/****************Page 4 ******************/
+.page5joining{
+    margin: 1em;
+}
