@@ -1,10 +1,14 @@
-.container{
+.container {
     max-width: 600px;
     margin: 2em auto;
-    padding: 2em 0.5em 5em;
+    padding: 2em 0.5em 0;
     /* background-color: rgb(210, 210, 210); */
     border-radius: 6px;
 
+}
+
+.locationsTitle {
+    padding: 0 1em 0.5em;
 }
 
 .bodyHeader {
@@ -15,22 +19,19 @@
     padding: 0 2em 1em;
 }
 
-
-
 .typography {
     display: flex;
     align-items: center;
 }
 
-
-.map{
+.map {
     max-width: 60rem;
     margin: 1em auto;
     border: 2px solid var(--color-highlight2);
     height: auto;
 }
 
-.mapImage{
+.mapImage {
     width: 100%;
 }
 
@@ -39,7 +40,7 @@
     text-decoration: underline;
 }
 
-@media (min-width: 500px){
+@media (min-width: 500px) {
     .section {
         padding: 3em;
     }

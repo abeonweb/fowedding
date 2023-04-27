@@ -4,6 +4,10 @@
     max-width: 900px;
 }
 
+.programsTitle {
+    padding: 0 1em 0.5em;
+}
+
 .program {
     padding: 6rem 0.1rem;
 }
@@ -37,8 +41,7 @@
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
-    margin: 1.5em 0 0.4em;
-    
+    margin: 1.5em 0 0.8em;
 }
 
 .subHeadingWithList {
