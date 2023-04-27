@@ -1,3 +1,9 @@
+.programs {
+    padding: 10rem 0 0;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
 .program {
     padding: 6rem 0.1rem;
 }
@@ -5,13 +11,16 @@
 .page {
     width: 95vw;
     max-width: 900px;
+    min-height: 70vh;
     background-color: var(--color-secondary);
     margin: 0.8rem auto;
     padding: 6.5rem 0.7rem;
+    border-radius: 6px;
 }
 
 
 .subHeading {
+    font-size: 2rem;
     font-weight: 700;
     text-align: left;
     margin: 1.5em 0 0.4em 1em;
@@ -23,8 +32,10 @@
     font-weight: 700;
     font-size: 2.3rem;
 }
+
 .subHeading2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
     text-align: center;
     margin: 1.5em 0 0.4em;
     
@@ -73,13 +84,6 @@
 
 
 /****************Page 2******************/
-.page2ListPara {
-    text-align: center;
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 1em;
-
-}
 
 .smallerText {
     font-size: 80%;
@@ -98,22 +102,28 @@
     margin: 0;
 }
 
+.page2ListPara {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1em;
+
+}
 
 .page2List2 {
     width: 100%;
     text-align: left;
     padding: 0 0.5em;
     margin: 2em 1em;
+    font-size: 1.5rem;
 }
 
 .page2List2 .page2ListPara {
     margin: 0 0.5em 0 0;
     text-align: left;
-    font-size: 0.8em;
 }
 
 .page2List2 li {
-    margin: 0 0.2em;
+    margin: 0 0.8em;
     padding: 1em 0.3em;
     border-bottom: 1px solid rgb(212, 209, 209);
 }
@@ -146,10 +156,10 @@
 
 .pageList {
     padding: 0 0.5em;
-    margin: 2em 0 2em 0.25em;
+    margin: 2em 0 2em 0.8em;
     max-width: 400px;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 /****************Page 4 ******************/
