@@ -43,6 +43,7 @@ const Locations = () => {
                   variant="h5"
                   sx={{ width: "33%", flexShrink: 0 }}
                   className={styles.typography}
+                  fontWeight="bold"
                 >
                   <LocationOnOutlinedIcon fontSize="large" />
                   {title}
