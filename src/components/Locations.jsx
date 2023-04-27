@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../css/location.module.css";
 import { scrollIntoTheView } from "../utils/scroll";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import Map from "./Map";
@@ -24,10 +24,9 @@ const Locations = () => {
   };
 
   return (
-    <section id="locations" className={styles.section}>
+    <section id="locations" >
       <div className={styles.container}>
-        <h1 className={styles.sectionTitle}>Information of Interest</h1>
-
+        <h2>Event Locations</h2>
         {locations.map(
           ({ id, title, date, time, address, link, image, info }) => (
             <Accordion
@@ -40,23 +39,37 @@ const Locations = () => {
                 aria-controls={`${id}location-content`}
                 id={`${id}location-header`}
               >
-                <Typography variant="h5" sx={{ width: "33%", flexShrink: 0 }} className={styles.typography}>
+                <Typography
+                  variant="h5"
+                  sx={{ width: "33%", flexShrink: 0 }}
+                  className={styles.typography}
+                >
                   <LocationOnOutlinedIcon fontSize="large" />
                   {title}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography variant="h6" >
-                  {`Date: ${date}`}
+                <Typography className={styles.bodyHeader} variant="h5">
+                  Date:
                 </Typography>
-                <Typography variant="h6" >
-                  {` Time: ${time}`}
+                <Typography className={styles.bodyText} variant="h5">
+                  {date}
                 </Typography>
-                <Typography variant="h6" >
-                  {`Address: ${address}`}
+                <Typography className={styles.bodyHeader} variant="h5">
+                  {" "}
+                  Time:
                 </Typography>
-                  <Map image={image} link={link}/>
-                <Typography >
+                <Typography className={styles.bodyText} variant="h5">
+                  {time}
+                </Typography>
+                <Typography className={styles.bodyHeader} variant="h5">
+                  Address:
+                </Typography>
+                <Typography className={styles.bodyText} variant="h5">
+                  {address}
+                </Typography>
+                <Map image={image} link={link} />
+                <Typography>
                   Additional info:{" "}
                   <a
                     className={styles.locationLink}
