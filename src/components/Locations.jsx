@@ -26,7 +26,7 @@ const Locations = () => {
   return (
     <section id="locations" >
       <div className={styles.container}>
-        <h2>Event Locations</h2>
+        <h2 className={styles.locationsTitle}>Event Locations</h2>
         {locations.map(
           ({ id, title, date, time, address, link, image, info }) => (
             <Accordion
