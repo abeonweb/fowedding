@@ -1,9 +1,10 @@
 .section {
+    margin-top: 3em;
     min-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(70, 69, 69, 0.5);
+    background-color: rgba(70, 69, 69, 0.6);
 }
 
 .container {
