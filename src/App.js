@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
 import Home from "./components/Home"
-import Gallery from "./components/Gallery"
+import PhotoGallery from "./components/PhotoGallery"
 import Programs from "./components/Programs"
 import Locations from "./components/Locations"
 
@@ -14,7 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout setSection={setSection}/>}>
         <Route index element={<Home section={section}/>} />
-        <Route path="gallery" element={<Gallery />} />
+        <Route path="gallery" element={<PhotoGallery />} />
         <Route path="locations" element={<Locations />} />
         <Route path="programs" element={<Programs />} />
       </Route>
