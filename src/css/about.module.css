@@ -1,11 +1,12 @@
 .section {
     padding: 3em 0;
+    width: 100vw;
+    background-color: rgba(27, 28, 28, 0.5);
 }
 
 .container {
     max-width: 600px;
     margin: 0;
-    background-color: rgba(27, 28, 28, 0.5);
     padding: 1em;
     border-radius: 6px;
 }
