@@ -3,8 +3,8 @@ import { useState } from 'react'
 const useOpen = () => {
     const [open, setOpen] = useState(false)
 
-    const handleClick = ()=>{
-        setOpen(prev => !prev)
+    const handleClick = (value)=>{
+        setOpen(value)
     }
 
     return {open , handleClick}
