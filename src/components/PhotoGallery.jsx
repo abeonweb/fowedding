@@ -8,11 +8,18 @@ import useMediaQuery from "../utils/useMediaQuery";
 const imageToItems = (photos) => {
   const allImages = photos.map(({ id, src, width, height }) => {
     const imageSource = require(`../images/${src}.jpg`);
-    
+
     return (
-      <Item key={id} original={src} width={width} height={height}>
+      <Item
+        key={id}
+        id={id}
+        original={imageSource}
+        width={width}
+        height={height}
+      >
         {({ ref, open }) => (
           <img
+            key={id}
             ref={ref}
             onClick={open}
             src={imageSource}
@@ -27,21 +34,21 @@ const imageToItems = (photos) => {
   return allImages;
 };
 
-const PhotoGallery = ({ images }) => {
-    // const [images, setImages] = useState([]);
-    // const [nextCursor, setNextCursor] = useState("");
-    // const [totalCount, setTotalCount] = useState(0);
-    // useEffect(()=>{
-    //   const fetchData = async ()=>{
-    //     const results = await search();
-    //     const { resources } = results;
-    //     const images = mapImageResources(resources);
-    //     setImages(images)
-    //     // setNextCursor(nextCursor)
-    //     // setTotalCount(totalCount)
-    //   }
-    //   fetchData()
-    // },[])
+const PhotoGallery = () => {
+  // const [images, setImages] = useState([]);
+  // const [nextCursor, setNextCursor] = useState("");
+  // const [totalCount, setTotalCount] = useState(0);
+  // useEffect(()=>{
+  //   const fetchData = async ()=>{
+  //     const results = await search();
+  //     const { resources } = results;
+  //     const images = mapImageResources(resources);
+  //     setImages(images)
+  //     // setNextCursor(nextCursor)
+  //     // setTotalCount(totalCount)
+  //   }
+  //   fetchData()
+  // },[])
   const photosList = imageToItems(photos);
   const matches = useMediaQuery("(min-width: 590px)");
 
@@ -57,13 +64,12 @@ const PhotoGallery = ({ images }) => {
   return (
     <section id="gallery" className={`${styles.section}`}>
       <h2 className={styles.sectionTitle}>Some of our photos</h2>
-      <Gallery>
-        <div
-          style={galleryStyles.container(matches)} //pass a boolean to styles obj
-        >
-          {photosList}
-        </div>
-      </Gallery>
+      <div
+        key={`photoDiv`}
+        style={galleryStyles.container(matches)} //pass a boolean to styles obj
+      >
+        <Gallery key={"photoGallery"}>{photosList}</Gallery>
+      </div>
     </section>
   );
 };
