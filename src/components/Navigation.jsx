@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 import { scrollIntoTheView } from "../utils/scroll.js";
 import useOpen from "../utils/useOpen";
 
-const Navigation = () => {
+const Navigation = ({setSection}) => {
   const { open, handleClick } = useOpen();
 
   return (
@@ -18,33 +18,57 @@ const Navigation = () => {
         <div className={styles.navLogo}>
           <div>
             <Link
-              to="/home"
-              onClick={() => {
-                scrollIntoTheView("home");
-              }}
+              to="/"
               className={styles.navTitleLink}
+              onClick={()=>{
+                setSection("home"); 
+                handleClick(false)}}
             >
               <h1 className={styles.pageTitle}>Folake &amp; Oluwole</h1>
             </Link>
           </div>
         </div>
-        <div onClick={handleClick} className={styles.menuIcon}>
+        <div onClick={()=>handleClick(open? false: true)} className={styles.menuIcon}>
           <span className={styles.hamburger}></span>
         </div>
 
         <nav className={styles.nav}>
           <Fade>
             <ul className={styles.navList}>
-              <li className={styles.navListItem}>
+              {/* <li className={styles.navListItem}>
                 <Link
-                  to="/home"
+                  to="/"
                   className={styles.navLink}
                   onClick={() => {
                     scrollIntoTheView("home");
-                    handleClick();
+                    handleClick(false);
+                  }}
+                  >
+                  <div>Home</div>
+                </Link>
+                  </li> */}
+              {/* <li className={styles.navListItem}>
+                <Link
+                to="/info"
+                className={styles.navLink}
+                onClick={() => {
+                  scrollIntoTheView("info");
+                  handleClick(false);
+                }}
+                >
+                <div>Information</div>
+                </Link>
+              </li> */}
+              <li className={styles.navListItem}>
+                <Link
+                  to="/"
+                  className={styles.navLink}
+                  onClick={() => {
+                    setSection("story");
+                    handleClick(false);
                   }}
                 >
-                  <div>Home</div>
+                  <div>Our Story</div>
                 </Link>
               </li>
               <li className={styles.navListItem}>
@@ -53,7 +77,7 @@ const Navigation = () => {
                   className={styles.navLink}
                   onClick={() => {
                     scrollIntoTheView("gallery");
-                    handleClick();
+                    handleClick(false);
                   }}
                 >
                   <div>Gallery</div>
@@ -61,35 +85,20 @@ const Navigation = () => {
               </li>
               <li className={styles.navListItem}>
                 <Link
-                  to="/info"
-                  className={styles.navLink}
-                  onClick={() => {
-                    scrollIntoTheView("info");
-                    handleClick();
-                  }}
-                >
-                  <div>Information</div>
-                </Link>
-              </li>
-              <li className={styles.navListItem}>
-                <Link
-                  to="/story"
-                  className={styles.navLink}
-                  onClick={() => {
-                    scrollIntoTheView("story");
-                    handleClick();
-                  }}
-                >
-                  <div>Our Story</div>
-                </Link>
-              </li>
-              <li className={styles.navListItem}>
-                <Link
                   to="/programs"
                   className={styles.navLink}
-                  onClick={() => handleClick()}
+                  onClick={() => handleClick(false)}
                 >
                   <div>Programs</div>
+                </Link>
+              </li>
+              <li className={styles.navListItem}>
+                <Link
+                  to="/locations"
+                  className={styles.navLink}
+                  onClick={() => handleClick(false)}
+                >
+                  <div>Locations</div>
                 </Link>
               </li>
             </ul>
