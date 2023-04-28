@@ -1,4 +1,3 @@
-// "use client";
 import React from "react";
 import WaterWave from "react-water-wave";
 import styles from "../css/splash.module.css"
