@@ -17,14 +17,14 @@ const Locations = () => {
     };
   }, []);
 
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState("reception");
 
   const handleChange = (locationId) => (event, isExpanded) => {
-    setExpanded(isExpanded ? locationId : false);
+    setExpanded(isExpanded ? locationId : "false");
   };
 
   return (
-    <section id="locations" >
+    <section id="locations" className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.locationsTitle}>Event Locations</h2>
         {locations.map(
