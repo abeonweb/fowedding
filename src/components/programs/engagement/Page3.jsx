@@ -6,11 +6,9 @@ const Page3 = () => (
 
     <ol className={styles.page2List2}>
       <li>
-        <div className={styles.page2List2Split}>
-          Bride’s family to be seated
-        </div>
+        <div className={styles.page2List2Split}>Praises</div>
       </li>
-      <li>Arrival of Groom’s family accompanying Oluwole with the letter</li>
+      <li>Prayers</li>
       <li>
         <div className={styles.page2List2Split}>
           <p className={`${styles.page2ListPara} ${styles.paragraph}`}>
@@ -22,19 +20,32 @@ const Page3 = () => (
         </div>
       </li>
       <li>
-        <p className={styles.page2ListPara}>Prayer</p>
-      </li>
-      <li>
         <p className={styles.page2ListPara}>
-          A minute silence in honor of Bride’s mother Late Mrs. Abosede Ayinke
-          Oke
+          Purpose of our gathering, The 2 Alagas
         </p>
       </li>
       <li>
-        <p className={styles.page2ListPara}>Exchange of letters </p>
+        <p className={styles.page2ListPara}>Ministration:</p>
+        <ul className={styles.page2List2InnerList}>
+          <li className={styles.page2List2InnerListItem}>
+            <p className={styles.page2ListPara}>a&#41; Here he comes</p>
+          </li>
+          <li className={styles.page2List2InnerListItem}>
+            <p className={styles.page2ListPara}>b&#41; Here she comes</p>
+          </li>
+        </ul>
       </li>
       <li>
-        <p className={styles.page2ListPara}>Arrival of the Bride – Folake</p>
+        <p className={styles.page2ListPara}>
+          A minute silence in honor of Bride&apos;s mother Late Mrs. Abosede
+          Ayinke Oke & Father of the Groom Mr. Fagbemi
+        </p>
+      </li>
+      <li>
+        <p className={styles.page2ListPara}>Short Exhortation</p>
+      </li>
+      <li>
+        <p className={styles.page2ListPara}>Exchange of letters </p>
       </li>
       <li>
         <div className={styles.page2List2Split}>
@@ -42,36 +53,19 @@ const Page3 = () => (
             Hymn 2:
           </p>
           <p className={`${styles.page2ListPara2} ${styles.paragraph}`}>
-            God give us Christian homes BH377
+            BH377 God give us Christian homes
           </p>
         </div>
-      </li>
-      <li>
-      <p className={styles.page2ListPara}>Ministration:</p>
-        <ul className={styles.page2List2InnerList}>
-          <li className={styles.page2List2InnerListItem}><p className={styles.page2ListPara}>a&#41; Admonitions</p></li>
-          <li className={styles.page2List2InnerListItem}>
-          <p className={styles.page2ListPara}>b&#41; Special Prayer session</p>
-          </li>
-        </ul>
       </li>
       <li>
         <p className={styles.page2ListPara}>Introduction of both Families</p>
       </li>
       <li>
-        <p className={styles.page2ListPara}>
-          Presentation of the Betrothal Gifts
-        </p>
-      </li>
-      <li>
-        <p className={styles.page2ListPara}>Blessing of the Engagement Ring</p>
-      </li>
-      <li>
-        <p className={styles.page2ListPara}>Prayer for the Couple</p>
+        <p className={styles.page2ListPara}>Engagement </p>
       </li>
       <li>
         <p className={styles.page2ListPara}>
-          Handing over the Bride to her parents-in-law
+          Prayer for the Couple from both Parents
         </p>
       </li>
       <li>
@@ -85,7 +79,10 @@ const Page3 = () => (
         </div>
       </li>
       <li>
-        <p className={styles.page2ListPara}>Grace</p>
+        <p className={styles.page2ListPara}>Closing prayers and Benediction.</p>
+      </li>
+      <li>
+        <p className={styles.page2ListPara}>Entertainment of guests</p>
       </li>
     </ol>
   </div>
