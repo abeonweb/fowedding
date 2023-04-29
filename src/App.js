@@ -5,6 +5,8 @@ import Home from "./components/Home"
 import PhotoGallery from "./components/PhotoGallery"
 import Programs from "./components/Programs"
 import Locations from "./components/Locations"
+import Information from "./components/Information"
+import Gifts from "./components/Gifts"
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="gallery" element={<PhotoGallery />} />
         <Route path="locations" element={<Locations />} />
         <Route path="programs" element={<Programs />} />
+        <Route path="gifts" element={<Gifts />} />
+        <Route path="info" element={<Information/>} />
       </Route>
     </Routes>
 
