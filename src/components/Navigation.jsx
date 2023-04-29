@@ -35,30 +35,7 @@ const Navigation = ({setSection}) => {
         <nav className={styles.nav}>
           <Fade>
             <ul className={styles.navList}>
-              {/* <li className={styles.navListItem}>
-                <Link
-                  to="/"
-                  className={styles.navLink}
-                  onClick={() => {
-                    scrollIntoTheView("home");
-                    handleClick(false);
-                  }}
-                  >
-                  <div>Home</div>
-                </Link>
-                  </li> */}
-              {/* <li className={styles.navListItem}>
-                <Link
-                to="/info"
-                className={styles.navLink}
-                onClick={() => {
-                  scrollIntoTheView("info");
-                  handleClick(false);
-                }}
-                >
-                <div>Information</div>
-                </Link>
-              </li> */}
+              
               <li className={styles.navListItem}>
                 <Link
                   to="/"
@@ -99,6 +76,27 @@ const Navigation = ({setSection}) => {
                   onClick={() => handleClick(false)}
                 >
                   <div>Locations</div>
+                </Link>
+              </li>
+              <li className={styles.navListItem}>
+                <Link
+                  to="/gifts"
+                  className={styles.navLink}
+                  onClick={() => handleClick(false)}
+                >
+                  <div>Gifts</div>
+                </Link>
+              </li>
+              <li className={styles.navListItem}>
+                <Link
+                to="/info"
+                className={styles.navLink}
+                onClick={() => {
+                  scrollIntoTheView("info");
+                  handleClick(false);
+                }}
+                >
+                <div>Information</div>
                 </Link>
               </li>
             </ul>
