@@ -10,19 +10,20 @@ import ReceptionProgram from "./ReceptionProgram";
 import EngagementProgram from "./EngagementProgram";
 import { programs } from "../data";
 import styles from "../css/program.module.css"
+import Photoshoot from "./Photoshoot";
 
-// const blue = {
+const blue = {
 //   50: "#F0F7FF",
 //   100: "#C2E0FF",
 //   200: "#80BFFF",
 //   300: "#66B2FF",
-//   400: "#3399FF",
+  400: "#33f1ff",
 //   500: "#007FFF",
 //   600: "#0072E5",
 //   700: "#0059B2",
 //   800: "#004C99",
 //   900: "#003A75",
-// };
+};
 
 const grey = {
   50: "#f6f8fa",
@@ -58,12 +59,13 @@ const StyledTab = styled(Tab)`
 
   &:focus {
     color: #fff;
-    outline: 3px solid ${grey[300]};
+    outline: 3px solid ${blue[400]};
   }
-
+  
   &.${tabClasses.selected} {
     background-color: ${grey[600]};
     color: ${grey[50]};
+    outline: 3px solid ${blue[400]};
   }
 
   &.${buttonClasses.disabled} {
@@ -94,6 +96,7 @@ const StyledTabsList = styled(TabsList)(
 );
 
 const Programs = () => {
+
   return (
     <section className={styles.section}>
     <div id="programs" className={styles.programs}>
@@ -101,7 +104,11 @@ const Programs = () => {
       <Tabs defaultValue={0}>
         <StyledTabsList>
           {programs.map((program, i) => (
-            <StyledTab key={program.id} value={i}>
+            <StyledTab 
+              key={program.id} 
+              value={i}
+              
+            >
               {program.id}
             </StyledTab>
           ))}
@@ -114,6 +121,9 @@ const Programs = () => {
         </StyledTabPanel>
         <StyledTabPanel value={2}>
           <ReceptionProgram />
+        </StyledTabPanel>
+        <StyledTabPanel value={3}>
+          <Photoshoot />
         </StyledTabPanel>
       </Tabs>
     </div>
