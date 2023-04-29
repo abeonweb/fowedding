@@ -7,7 +7,9 @@ export default function Layout({setSection}) {
   return (
     <>
         <Navigation setSection={setSection}/>
-        <Outlet />
+        <main id="main">
+          <Outlet />
+        </main>
         <Footer/>
     </>
   );
