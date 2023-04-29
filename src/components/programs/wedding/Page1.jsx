@@ -13,7 +13,7 @@ const Page1 = () => {
       <p className={`${styles.page1Para} ${styles.darker}`}>OLUWOLE OLUSOLA</p>
       <p className={`${styles.page1Para} ${styles.smaller}`}>ON</p>
       <p className={styles.page1Para}>SATURDAY 13 MAY, 2023</p>
-      <p className={styles.page1Para}>TIME: 12:00 PM</p>
+      <p className={styles.page1Para}>TIME: 10:00 PM</p>
       <p className={`${styles.page1Para} ${styles.smaller}`}>AT</p>
       <p className={styles.page1Para}>FIRST BAPTIST CHURCH</p>
       <p className={styles.page1Para}>(PREVAILERS&apos; SANCTUARY)</p>
