@@ -4,8 +4,16 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import useMediaQuery from "../utils/useMediaQuery";
 // import {search, mapImageResources} from "../lib/cloudinary"
-
+const shuffleArray = arr => {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+}
 const imageToItems = (photos) => {
+  shuffleArray(photos)
   const allImages = photos.map(({ id, src, width, height }) => {
     const imageSource = require(`../images/${src}.jpg`);
 
