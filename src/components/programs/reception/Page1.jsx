@@ -24,8 +24,6 @@ const Page1 = () => {
         <li className={styles.subHeading}>First Assignment</li>
         <li className={styles.subHeading}> Toast</li>
         <li className={styles.subHeading}> Couple&apos;s First Dance</li>
-        <li className={styles.subHeading}> Father and Daughter Dance </li>
-        <li className={styles.subHeading}> Mother and Son Dance </li>
         <li className={styles.subHeading}> Who is next?</li>
         <li className={styles.subHeading}> Presentation of gifts</li>
         <li className={styles.subHeading}> Vote of Thanks </li>
