@@ -1,0 +1,38 @@
+.section{
+    padding: 5em 1.5em;
+    background-color: rgba(255,255,255, 0.7);
+    margin: 0 0.5em;
+    letter-spacing: 1px;
+    
+}
+
+.sectionTitle {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1.1;
+    margin: 1em;
+    letter-spacing: 2px;
+}
+
+.message {
+    font-size: 1.1em;
+    margin: 0 0 2em;
+}
+
+.articleTitle {
+    margin-bottom: 1em;
+}
+
+.list {
+    padding-left: 2em;
+}
+
+.listItem {
+    margin-bottom: 1em;
+}
+
+.innerList{
+    list-style: none;
+    padding-left: 1.5em;
+    font-weight: 600;
+}
