@@ -1,6 +1,9 @@
 .section{
-    padding: 2em 0.5em 5em;
-    background-color: rgba(255,255,255, 0.3);
+    padding: 5em 1.5em;
+    background-color: rgba(255,255,255, 0.7);
+    margin: 0 0.5em;
+    letter-spacing: 1px;
+    
 }
 
 .sectionTitle {
@@ -8,4 +11,21 @@
     text-align: center;
     line-height: 1.1;
     margin: 1em;
+}
+
+.message {
+    font-size: 1.1em;
+    margin: 0 0 2em;
+}
+
+.articleTitle {
+    margin-bottom: 0.25em;
+}
+
+.list {
+    padding-left: 2em;
+}
+
+.listItem {
+    margin-bottom: 1em;
 }
