@@ -162,14 +162,20 @@
     text-align: center;
     margin-bottom: 1.5em;
     font-size: 1em;
+    padding: 0 0.5em;
 }
 
-.pageList {
-    padding: 0 0.5em;
+.pageList, .pageListItem {
+    padding: 0 0.25em;
     margin: 2em 0 2em 0.8em;
     max-width: 400px;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
+}
+
+.pageListItem {
+    padding: 0 0.25em;
+    margin: 2em 0 2em 0;
 }
 
 /****************Page 4 ******************/
