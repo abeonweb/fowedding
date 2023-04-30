@@ -7,36 +7,46 @@ const Page4 = () => {
         <li className={styles.subHeading}>
           CONGREGATIONAL HYMN: “AND CAN IT BE”
           <ol className={styles.pageList}>
-            <li className={styles.pageList}>
+            <li className={styles.pageListItem}>
               And can it be that I should gain An interest in the Savior&apos;s
               blood? Died he for me, who caused His pain? For me, who Him to
               death pursued? Amazing love! How can it be That thou, my God,
-              should die for me? Refrain: Amazing love! How can it be That thou,
-              my God, should die for me?
+              should die for me?
+              <br />
+              <br />
+              <span className={styles.darker}>Refrain:</span> Amazing love! How
+              can it be That thou, my God, should die for me?
             </li>
-            <li className={styles.pageList}>
+            <li className={styles.pageListItem}>
               ‘Tis mystery all! The immortal dies! Who can explore His strange
               design? In vain the first born seraph tries To sound the depths of
               love divine! Tis mercy all! Let earth adore, Let angels minds
-              inquire no more. (Refrain)
+              inquire no more. <br />
+              <span className={styles.darker}>(Refrain)</span>
             </li>
-            <li className={styles.pageList}>
+            <li className={styles.pageListItem}>
               He left His father&apos;s throne above, So free, so infinite His
               grace; Emptied himself of all but love, And bled for Adam&apos;s
               helpless race; ‘Tis mercy all, immense and free; For, O my God, it
-              found out me. (Refrain)
+              found out me. <br />
+              <span className={styles.darker}>(Refrain)</span>
             </li>
-            <li className={styles.pageList}>
+            <li className={styles.pageListItem}>
               Long my imprisoned spirit lay Fast bound in sin and nature&apos;s
               night; Thine eye diffused a quickening ray, I woke, the dungeon
               flamed with light; My chains fell off, my heart was free; I rose,
-              went forth and followed Thee. (Refrain)
+              went forth and followed Thee. <br />
+              <span className={styles.darker}>(Refrain)</span>
             </li>
-            <li className={styles.pageList}>
+            <li className={styles.pageListItem}>
               No condemnation now I dread; Jesus, and all in Him is mine! Alive
               in HIM, my living Head, And clothed in righteousness divine,
               boldly approach the eternal throne, And claim the crown, through
-              Christ my own. (Refrain) Amen.
+              Christ my own. <br />
+              <span className={styles.darker}>(Refrain) </span>
+              <br />
+              <br />
+              Amen.
             </li>
           </ol>
         </li>

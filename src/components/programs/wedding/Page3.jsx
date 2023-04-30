@@ -6,22 +6,22 @@ const Page3 = () => (
       <li className={styles.subHeading}>
         BRIDAL PROCESSIONAL HYMN BH 134: “ALL HAIL THE POWER OF JESUS NAME”
         <ol className={styles.pageList}>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             All hail the power of Jesus name! Let Angels prostrate fall; Bring
             forth the royal diadem, And crown Him Lord of all; Bring forth the
             royal diadem and crown Him Lord of all,
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             Ye chosen seed of Isreal&apos;s race, Ye ransomed from the father,
             Hail Him who saves you by his grace, And crown Him, crown Him, crown
             Him. crown Him Lord of All,
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             Let every kindred, every tribe, on this terrestrial ball, To Him all
             Majesty ascribe, And crown Him, crown Him, crown Him, crown Him Lord
             of all,
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             Oh that with yonder sacred throng Weat His feet may fall!&nbsp;
             We&apos;ll join the everlasting song, And crown Him, crown Him,
             crown Him, crown Him Lord of all. Amen.
@@ -34,30 +34,30 @@ const Page3 = () => (
       <li className={styles.subHeading}>
         HYMN: YBH 188 “AMAZING GRACE”
         <ol className={styles.pageList}>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             Amazing grace (how sweet the sound) that saved a wretch like me! I
             was once lost, but now I&apos;m found, was blind, but now I see,
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             ‘Twas grace that taught my heart to fear, and grace my fear
             relieved; how precious did that grace appear the hour I first
             believed!
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             Through many dangers, toils and snares I have already come:
             <br />
             ‘tis grace has brought me safe thus far, and grace will lead me
             home,
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             The Lord has promised good to me, His word my hope secures; He will
             my shield and portion be as long as life endures,
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             Yes, when this flesh and heart shall fail, and mortal life shall
             cease; I shall possess, within the veil, a life of joy and peace,
           </li>
-          <li className={styles.pageList}>
+          <li className={styles.pageListItem}>
             The earth shall soon dissolve like snow, the sun forbear to shine;
             but God, who called me here below, will be forever mine.
           </li>

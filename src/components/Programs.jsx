@@ -96,7 +96,6 @@ const StyledTabsList = styled(TabsList)(
 );
 
 const Programs = () => {
-
   return (
     <section className={styles.section}>
     <div id="programs" className={styles.programs}>
@@ -107,7 +106,7 @@ const Programs = () => {
             <StyledTab 
               key={program.id} 
               value={i}
-              
+              onClick={(e)=> console.log(e)}
             >
               {program.id}
             </StyledTab>
