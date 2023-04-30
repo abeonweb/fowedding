@@ -7,42 +7,47 @@ const About = () => {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Our Story</h2>
         <p className={styles.text}>
-          Folake met Wole in 2004 while visiting her friend who lived nearby.
-          Even though thy became friends, there was no interest in a
-          relationship beyond that.
+          Folake and Wole met in 2004 while she was visiting a friend who lived
+          nearby. Even though they became friends, there was no interest beyond
+          that.
         </p>
         <p className={styles.text}>
-          He was a shy guy. She could talk up a full novel. Their paths always
-          intersected because they had mutual friends and turns out Wole was
-          even a friend of her cousin as well.
+          Wole, a shy guy, while Folake is quite chatty, they often crossed
+          paths because they had mutual friends. In fact, it turns out that Wole
+          and Folake's cousin are friends as well.
         </p>
         <p className={styles.text}>
-          She leaves to go to college in the U.S. He goes to Convenat
-          University. They lose touch.
+          While Folake went off to college in the United States, Wole went to
+          Covenant University, and they lost touch for many years.
         </p>
         <p className={styles.text}>
-          About ten years later she moves back to Nigeria and reconnects with a
-          few of her friend and sees Wole again. They start talking about life
-          and different situations, become fast friends again.
+          10 years later, Folake returned to Nigeria, reconnected with her
+          friends, and also ran into Wole. This time, they caught up and began
+          talking more often, and then they hit it off. While they liked each
+          other, he felt like he could not match her energy.
         </p>
         <p className={styles.text}>
-          Visit after visit to see each other and sparks start to fly between.
-          The both of them still felt like it was the wrong time. He felt like
-          her personality was just too much for him while.
+          Wole moved to Ibadan, where he got a job while Folake lived in Lagos.
+          They lost touch again within that period.
         </p>
         <p className={styles.text}>
-          He moves to Ibadan to start a job and She remains in Lagos.
+          By 2020, Folake relocated to the US, and somehow, again, she and Wole
+          reconnected. It seemed like the universe was doing its thing. This
+          time, they began a long-distance relationship when they realised they
+          had feelings for each other. Folake came home often just so she could
+          be with Wole.
         </p>
-        <p className={styles.text}>They lose touch again.</p>
         <p className={styles.text}>
-          Folake relocated back to the US in 2020 but she and Wole reconnected,
-          realized they loved each other and couldn't imagine letting go again.
-          This time they started a long distance relationship involving lots of
-          travel, late night calls and I miss yous. Wole proposed right after
-          Christmas 2022 and they are getting married May 13th, 2023 by God's
-          grace.
+          By December 2022, Wole popped the big question, to which Folake
+          said,'YES'! Hence, the reason why we are here.
         </p>
-        <p className={styles.text}>Please come celebrate with them.</p>
+        <p className={styles.text}>
+          On the 11th & 13th of May 2023, we will join them to celebrate as they
+          become man and wife.
+        </p>
+        <p className={styles.text}>
+          We wish them a blissful marriage and home in Jesus' name.
+        </p>
       </div>
     </section>
   );
