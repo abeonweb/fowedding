@@ -63,9 +63,9 @@ const PhotoGallery = () => {
   const galleryStyles = {
     container: (isMobile) => ({
       display: "grid",
-      gridTemplateColumns: isMobile ? "171px 220px 171px" : "170px 141px",
-      gridTemplateRows: "254px 254px",
-      gridGap: 12,
+      gridTemplateColumns: isMobile ? "171px 210px 171px" : "170px 141px",
+      // gridTemplateRows: "254px 254px",
+      gridGap: 18,
     }),
   };
 
