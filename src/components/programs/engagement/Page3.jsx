@@ -38,7 +38,7 @@ const Page3 = () => (
       <li>
         <p className={styles.page2ListPara}>
           A minute silence in honor of Bride&apos;s mother Late Mrs. Abosede
-          Ayinke Oke & Father of the Groom Mr. Fagbemi
+          Ayinke Oke & Father of the Groom Late Chief Samuel Adedayo Fagbemi
         </p>
       </li>
       <li>
