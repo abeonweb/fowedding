@@ -7,14 +7,14 @@ const About = () => {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Our Story</h2>
         <p className={styles.text}>
-          Folake and Wole met in 2004 while she was visiting a friend who lived
-          nearby. Even though they became friends, there was no interest beyond
+          Folake and Wole met in 2004 while she was visiting her friend who lived
+          nearby and happened to be Wole&apos;s cousin, Seun. Even though they became friends, there was no interest beyond
           that.
         </p>
         <p className={styles.text}>
           Wole, a shy guy, while Folake is quite chatty, they often crossed
           paths because they had mutual friends. In fact, it turns out that Wole
-          and Folake's cousin are friends as well.
+          and Folake's cousin Sola are friends as well.
         </p>
         <p className={styles.text}>
           While Folake went off to college in the United States, Wole went to
