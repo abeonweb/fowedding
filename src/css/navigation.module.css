@@ -5,20 +5,43 @@
     position: fixed;
     top: 0;
     z-index: 950;
-    background: linear-gradient(159deg, rgb(255, 255, 255) 25%, rgb(235, 234, 234) 52%, rgb(143, 142, 142) 83%);
+    background: linear-gradient(159deg, rgb(143, 142, 142) 10%, rgb(255, 255, 255) 25%, rgb(235, 234, 234) 52%, rgb(143, 142, 142) 89%);
     height: 75px;
     display: flex;
 }
 
 .footer{
-    height: 75px;
+    height: 150px;
     width: 100%;
     background-color: var(--color-primary);
+    background: linear-gradient(159deg, rgb(70, 70, 70) 10%, rgb(44, 44, 44) 25%, rgb(31, 30, 30) 52%, rgb(69, 69, 69) 89%);
     color: var(--color-secondary);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin-top: auto;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    font-size: 1.8rem;
+    padding-top: 2em;
+}
+
+.creator {
+    font-size: 1.4rem;
+    padding: 0 1em;
+}
+
+.portfolioLink{
+    letter-spacing: 2px;
+    text-underline-offset: 0.4em;
+}
+
+.portfolioLink:focus{
+    text-decoration: underline;
+    color: var(--clr-highlight2);
 }
 
 .pageTitle {
