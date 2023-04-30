@@ -21,7 +21,7 @@ const Page3 = () => (
       </li>
       <li>
         <p className={styles.page2ListPara}>
-          Purpose of our gathering, The 2 Alagas
+          Purpose of our gathering, The two Alagas
         </p>
       </li>
       <li>
@@ -45,7 +45,15 @@ const Page3 = () => (
         <p className={styles.page2ListPara}>Short Exhortation</p>
       </li>
       <li>
-        <p className={styles.page2ListPara}>Exchange of letters </p>
+        <p className={styles.page2ListPara}>Ministration:</p>
+        <ul className={styles.page2List2InnerList}>
+          <li className={styles.page2List2InnerListItem}>
+            <p className={styles.page2ListPara}>Exchange of letters</p>
+          </li>
+          <li className={styles.page2List2InnerListItem}>
+            <p className={styles.page2ListPara}>Letter reading - Miss Toyibah Adekanbi</p>
+          </li>
+        </ul>
       </li>
       <li>
         <div className={styles.page2List2Split}>
