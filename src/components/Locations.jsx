@@ -7,6 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import Map from "./Map";
 import { locations } from "../data";
+import { Link } from "react-router-dom";
 
 const Locations = () => {
   useEffect(() => {
@@ -27,6 +28,20 @@ const Locations = () => {
     <section id="locations" className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.locationsTitle}>Event Locations</h2>
+        <p className={styles.locationsText}>
+          We really appreciate your presence at our engagement and wedding
+          ceremonies. Below are the locations and times of each event. Please be
+          sure to select the right event.
+        </p>
+        <p className={styles.locationsText}>
+          If you want to follow along with the proceedings the
+          <Link to="/programs" className={styles.locationsLink}>
+            {" "}
+            Online Programs{" "}
+          </Link>
+          are here.
+        </p>
+
         {locations.map(
           ({ id, title, date, time, address, link, image, info }) => (
             <Accordion
