@@ -1,9 +1,9 @@
-.section{
+.section {
     padding: 5em 1.5em;
-    background-color: rgba(255,255,255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 0 0.5em;
     letter-spacing: 1px;
-    
+
 }
 
 .sectionTitle {
@@ -31,8 +31,16 @@
     margin-bottom: 1em;
 }
 
-.innerList{
+.innerList {
     list-style: none;
     padding-left: 1.5em;
     font-weight: 600;
+}
+
+@media (min-width: 600px) {
+    .section {
+        max-width: 600px;
+        margin: 0 auto 1em;
+
+    }
 }

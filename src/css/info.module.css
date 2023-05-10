@@ -2,7 +2,7 @@
     max-width: 600px;
     padding: 5em 1.5em;
     background-color: rgba(255,255,255, 0.7);
-    margin: 5em auto 1em;
+    margin: 0 0.5em 1em;
     letter-spacing: 1px;
     
 }
@@ -30,4 +30,12 @@
 
 .listItem {
     margin-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+    .section {
+        max-width: 600px;
+        margin: 0 auto 1em;
+
+    }
 }
