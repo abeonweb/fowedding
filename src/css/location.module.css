@@ -20,6 +20,16 @@
     color: var(--color-highlight2);
 }
 
+.locationsText {
+    color: var(--color-secondary);
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+.locationsLink {
+    color: var(--color-highlight2);
+}
+
 .bodyHeader {
     font-weight: bolder;
 }
