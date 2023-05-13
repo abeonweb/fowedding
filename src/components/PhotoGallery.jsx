@@ -32,7 +32,7 @@ const imageToItems = (photos) => {
             onClick={open}
             src={imageSource}
             alt=""
-            loading="lazy"
+            /*loading="lazy"*/
             className={styles.photo}
           />
         )}
